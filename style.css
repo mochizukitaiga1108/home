@@ -11,12 +11,19 @@ img {
 	border: 0px;
 	display: flex;
 }
+
 input[type="submit"] {
 	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#AAA));
 }
+
+.clear {
+	clear: both;
+}
+
 /*====================================================================================================*/
 /* メイン                                                                                             */
 /*====================================================================================================*/
+
 div.main {
 	background-image: url(head.png);
 	background-repeat: repeat;
@@ -80,4 +87,39 @@ div.main>div.search>div.form {
 
 div.main>div.search>div.space {
 	flex-basis: 10px;
+}
+
+/*====================================================================================================*/
+/* タブ                                                                                               */
+/*====================================================================================================*/
+
+div.tab_bar {
+	display: flex;
+	margin-top: 10px;
+}
+
+div.tab_bar>div.tab {
+	display: flex;
+	color: #000000;
+	text-align: center;
+	align-items: center;
+	font-size: 0.8em;
+	background-color: #FFFFFF;
+	padding: 5px 10px;
+	margin-left: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+div.tab_bar>div.tab span {
+	margin: 0px 5px;
+}
+
+/*====================================================================================================*/
+/* ウェブページ                                                                                       */
+/*====================================================================================================*/
+
+div.webpage {
+	border: 1px #999999 solid;
+	margin-bottom: 10px;
 }
