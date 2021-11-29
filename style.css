@@ -123,3 +123,48 @@ div.webpage {
 	border: 1px #999999 solid;
 	margin-bottom: 10px;
 }
+
+div.rss {
+	display: flex;
+	margin: 10px;
+}
+div.rss>div.container {
+	width: 100%;
+	border: solid 2px;
+	border-color: #333333;
+}
+div.rss a{
+	font-size: 20px;
+	color: #FFFFFF;
+}
+div.rss a:hover{
+	color: #00bfff;
+}
+div.rss p{
+	font-size: 20px;
+}
+div.rss>div.container h1{
+	font-size: 20px;
+	color: #FFFFFF;
+}
+div.rss>div.container h1:hover{
+	color: #00bfff;
+}
+div.rss>div.container>div.con_link {
+	width: 100%;
+	height: auto;
+	background-color: #333333;
+	color: #FFFFFF;
+}
+div.con_link>div.con_p {
+	width: 100%;
+	height: auto;
+	background-color: #333333;
+	color: #FFFFFF;
+}
+div.rss>div.container>div.con_date {
+	width: 100%;
+	height: auto;
+	background-color: #333333;
+	color: #FFFFFF;
+}
