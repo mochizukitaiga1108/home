@@ -118,57 +118,33 @@
 				<div class="con_link">
 					<p><a href="<?php echo $data[0]['link']; ?>" target="_blank"> <?php echo $data[0]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[0]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[0]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[1]['link']; ?>" target="_blank"> <?php echo $data[1]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[1]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[1]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[2]['link']; ?>" target="_blank"> <?php echo $data[2]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[2]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[2]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[3]['link']; ?>" target="_blank"> <?php echo $data[3]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[3]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[3]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[4]['link']; ?>" target="_blank"> <?php echo $data[4]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[4]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[4]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[5]['link']; ?>" target="_blank"> <?php echo $data[5]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[5]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[5]['pubDate']; ?></p>
-				</div>
 			</div>
 			<?php 
 				$data = array();
@@ -187,57 +163,33 @@
 				<div class="con_link">
 					<p><a href="<?php echo $data[0]['link']; ?>" target="_blank"> <?php echo $data[0]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[0]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[0]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[1]['link']; ?>" target="_blank"> <?php echo $data[1]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[1]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[1]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[2]['link']; ?>" target="_blank"> <?php echo $data[2]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[2]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[2]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[3]['link']; ?>" target="_blank"> <?php echo $data[3]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[3]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[3]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[4]['link']; ?>" target="_blank"> <?php echo $data[4]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[4]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[4]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[5]['link']; ?>" target="_blank"> <?php echo $data[5]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[5]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[5]['pubDate']; ?></p>
-				</div>
 			</div>
 		</div>
 		<div class="rss">
@@ -258,57 +210,33 @@
 				<div class="con_link">
 					<p><a href="<?php echo $data[0]['link']; ?>" target="_blank"> <?php echo $data[0]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[0]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[0]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[1]['link']; ?>" target="_blank"> <?php echo $data[1]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[1]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[1]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[2]['link']; ?>" target="_blank"> <?php echo $data[2]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[2]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[2]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[3]['link']; ?>" target="_blank"> <?php echo $data[3]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[3]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[3]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[4]['link']; ?>" target="_blank"> <?php echo $data[4]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[4]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[4]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[5]['link']; ?>" target="_blank"> <?php echo $data[5]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[5]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[5]['pubDate']; ?></p>
-				</div>
 			</div>
 			<?php 
 				$data = array();
@@ -327,57 +255,33 @@
 				<div class="con_link">
 					<p><a href="<?php echo $data[0]['link']; ?>" target="_blank"> <?php echo $data[0]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[0]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[0]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[1]['link']; ?>" target="_blank"> <?php echo $data[1]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[1]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[1]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[2]['link']; ?>" target="_blank"> <?php echo $data[2]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[2]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[2]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[3]['link']; ?>" target="_blank"> <?php echo $data[3]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[3]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[3]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[4]['link']; ?>" target="_blank"> <?php echo $data[4]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[4]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[4]['pubDate']; ?></p>
-				</div>
 				<div class="con_link">
 					<p><a href="<?php echo $data[5]['link']; ?>" target="_blank"> <?php echo $data[5]['title']; ?></a></p>
 				</div>
-				<div class="con_p">
 					<p><?php echo $data[5]['description']; ?></p>
-				</div>
-				<div class="con_date">
 					<p><?php echo $data[5]['pubDate']; ?></p>
-				</div>
 			</div>
 		</div>
 	</div>
