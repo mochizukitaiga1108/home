@@ -54,6 +54,7 @@ div.link_bar>div.link {
 div.link_bar>div.link a {
 	color: #FFFFFF;
 	text-decoration: none;
+	margin-right: 10px;
 }
 
 div.link_bar>div.link img.icon {
@@ -142,10 +143,6 @@ div.rss a:hover{
 }
 div.rss p{
 	font-size: 20px;
-}
-div.rss>div.container h1{
-	font-size: 20px;
-	color: #FFFFFF;
 }
 div.rss>div.container h1:hover{
 	color: #00bfff;
