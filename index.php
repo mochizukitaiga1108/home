@@ -17,35 +17,30 @@
 					<img class="icon" src="icon/gmail.png">
 				</a>
 				<a href="https://mail.google.com/" target="_blank">Gmail</a>
-				<img src="icon/option.png" class="button" title="タイトル">
 			</div>
 			<div class="link">
 				<a href="https://www.youtube.com/" target="_blank">
 					<img class="icon" src="icon/youtube.png">
 				</a>
 				<a href="https://www.youtube.com/" target="_blank">YouTube</a>
-				<img src="icon/option.png" class="button" title="タイトル">
 			</div>
 			<div class="link">
 				<a href="https://www.nicovideo.jp/" target="_blank">
 					<img class="icon" src="icon/niconico.png">
 				</a>
 				<a href="https://www.nicovideo.jp/" target="_blank">ニコニコ</a>
-				<img src="icon/option.png" class="button" title="タイトル">
 			</div>
 			<div class="link">
 				<a href="https://www.amazon.co.jp/" target="_blank">
 					<img class="icon" src="icon/amazon.png">
 				</a>
 				<a href="https://www.amazon.co.jp/" target="_blank">Amazon</a>
-				<img src="icon/option.png" class="button" title="タイトル">
 			</div>
 			<div class="link">
 				<a href="https://twitter.com/" target="_blank">
 					<img class="icon" src="icon/twitter.png">
 				</a>
 				<a href="https://twitter.com/" target="_blank">Twitter</a>
-				<img src="icon/option.png" class="button" title="タイトル">
 			</div>
 		</div>
 		
@@ -94,7 +89,6 @@
 				<div class="tab">
 					<img class="icon" src="icon/home.png">
 					<span class="title">Home</span>
-					<img src="icon/option.png" class="button" title="タイトル">
 				</div>
 			</div>
 		</div>
