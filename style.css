@@ -1,3 +1,4 @@
+
 body {
 	width: 100%;
 	color: #333333;
@@ -54,7 +55,7 @@ div.link_bar>div.link {
 div.link_bar>div.link a {
 	color: #FFFFFF;
 	text-decoration: none;
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 div.link_bar>div.link img.icon {
@@ -102,6 +103,7 @@ div.tab_bar {
 div.tab_bar>div.tab {
 	display: flex;
 	color: #000000;
+	font-weight: bold;
 	text-align: center;
 	align-items: center;
 	font-size: 0.8em;
@@ -112,12 +114,40 @@ div.tab_bar>div.tab {
 	border-top-right-radius: 10px;
 }
 
+div.tab_bar>div.tab_action {
+	display: flex;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	font-size: 0.8em;
+	background-color: #FFFFFF;
+	padding: 5px 10px;
+	margin-left: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: solid 5px #333333;
+}
+
+div.tab_bar>div.tab_action a{
+	display: flex;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+div.tab_bar>div.tab_action a:hover{
+	color: #00bfff;
+}
+
 div.tab_bar>div.tab span {
 	margin: 0px 5px;
 }
 
 /*====================================================================================================*/
-/* ウェブページ                                                                                       */
+/* ウェブページ：Ｎｅｗｓ                                                                             */
 /*====================================================================================================*/
 
 div.webpage {
@@ -129,27 +159,77 @@ div.rss {
 	display: flex;
 	margin: 10px;
 }
+
 div.rss>div.container {
 	width: 100%;
-	border: solid 2px;
+	border: solid 5px;
 	border-color: #333333;
 }
-div.rss a{
+
+div.rss>div.container img{
+	width: 50%;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+div.rss>div.container a{
 	font-size: 20px;
 	color: #FFFFFF;
+	text-decoration: none;
 }
-div.rss a:hover{
+
+div.rss>div.container a:hover{
 	color: #00bfff;
 }
-div.rss p{
+
+div.rss>div.container p{
 	font-size: 20px;
 }
+
 div.rss>div.container h1:hover{
 	color: #00bfff;
 }
+
 div.rss>div.container>div.con_link {
 	width: 100%;
 	height: auto;
 	background-color: #333333;
 	color: #FFFFFF;
+}
+
+/*====================================================================================================*/
+/* ウェブページ：Ｙｏｕｔｕｂｅ                                                                       */
+/*====================================================================================================*/
+
+div.rss>div.container_youtube {
+	width: 100%;
+	border: solid 5px;
+	border-color: #333333;
+	list-style-type: none
+}
+
+div.rss>div.container_youtube p{
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+div.rss>div.container_youtube a{
+	font-size: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+div.rss>div.container_youtube a:hover{
+	color: #00bfff;
+}
+
+div.you_link {
+	width: 100%;
+	height: auto;
+	background-color: #333333;
+}
+
+div.image_flex {
+	margin-top: 100px;
+	margin-left: 100px;
 }
