@@ -112,7 +112,7 @@
 		</div>
 		<div class="rss">
 			<div class="container_youtube">
-				<div class="you_link"><a href="https://www.youtube.com/c/HALChannel" target="_blank">
+				<div class="you_link"><a href="https://www.youtube.com/c/tbsnews" target="_blank">
 					<image class="image_flex" src="icon/new-01.png" id="news"><h1>　TBS NEWS</h1>
 				</a></div>
 				<?php
@@ -131,7 +131,7 @@
 				?>
 			</div>
 			<div class="container_youtube">
-				<div class="you_link"><a href="https://www.youtube.com/c/HALChannel" target="_blank">
+				<div class="you_link"><a href="https://www.youtube.com/user/ANNnewsCH" target="_blank">
 					<image class="image_flex" src="icon/new-02.png"><h1>　ANNNewsCH</h1>
 				</a></div>
 				<?php
@@ -150,7 +150,7 @@
 				?>
 			</div>
 			<div class="container_youtube">
-				<div class="you_link"><a href="https://www.youtube.com/c/HALChannel" target="_blank">
+				<div class="you_link"><a href="https://www.youtube.com/channel/UCuTAXTexrhetbOe3zgskJBQ" target="_blank">
 					<image class="image_flex" src="icon/new-03.png"><h1>　日テレNEWS</h1>
 				</a></div>
 				<?php
@@ -168,25 +168,14 @@
 					echo '</ul>';
 				?>
 			</div>
-			<div class="container_youtube">
-				<div class="you_link"><a href="https://www.youtube.com/c/HALChannel" target="_blank">
-					<image class="image_flex" src="icon/new-04.png"><h1>　ウェザーニュース</h1>
-				</a></div>
-				<?php
-					$url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCNsidkYpIAQ4QaufptQBPHQ";
-					$rss = file_get_contents($url);
-					$rss = preg_replace("/<([^>]+?):(.+?)>/", "<$1_$2>", $rss);
-					$rss = simplexml_load_string($rss,'SimpleXMLElement');
-					echo '<ul style="list-style-type: none">';
-					foreach($rss->entry as $value) {
-						echo '<li>';
-						echo '<div class="youtube-box"><iframe src="https://www.youtube.com/embed/' . htmlspecialchars($value->yt_videoId) . '" frameborder="0"></iframe></div>';
-						echo '<div class="you_link"><p><a href="https://www.youtube.com/watch?v=' . htmlspecialchars($value->yt_videoId) . '" target="_blank">' . htmlspecialchars($value->title) . '</a></p></div>';
-						echo '</li>';
-					}
-					echo '</ul>';
-				?>
-			</div>
+		</div>
+		<div class="rss">
+			<div class="container_youtube"><div class="you_link">
+				<p><a href="#news">ニュースチャンネルへ</a>
+			</div></div>
+			<div class="container_youtube"><div class="you_link">
+				<p><a href="#game">娯楽チャンネルへ</a></p>
+			</div></div>
 		</div>
 		<div class="rss">
 			<div class="container_youtube">
@@ -209,27 +198,8 @@
 				?>
 			</div>
 			<div class="container_youtube">
-				<div class="you_link"><a href="https://www.youtube.com/channel/UCCSYkCmtUZly_GA_jsUN1Rw" target="_blank">
-					<image class="image_flex" src="icon/tuber-02.png"><h1>　ヨシダmp4</h1>
-				</a></div>
-				<?php
-					$url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCCSYkCmtUZly_GA_jsUN1Rw";
-					$rss = file_get_contents($url);
-					$rss = preg_replace("/<([^>]+?):(.+?)>/", "<$1_$2>", $rss);
-					$rss = simplexml_load_string($rss,'SimpleXMLElement');
-					echo '<ul style="list-style-type: none">';
-					foreach($rss->entry as $value) {
-						echo '<li>';
-						echo '<div class="youtube-box"><iframe src="https://www.youtube.com/embed/' . htmlspecialchars($value->yt_videoId) . '" frameborder="0"></iframe></div>';
-						echo '<div class="you_link"><p><a href="https://www.youtube.com/watch?v=' . htmlspecialchars($value->yt_videoId) . '" target="_blank">' . htmlspecialchars($value->title) . '</a></p></div>';
-						echo '</li>';
-					}
-					echo '</ul>';
-				?>
-			</div>
-			<div class="container_youtube">
 				<div class="you_link"><a href="https://www.youtube.com/c/PIKASONICmusic" target="_blank">
-					<image class="image_flex" src="icon/tuber-03.png"><h1>　PIKASONIC</h1>
+					<image class="image_flex" src="icon/tuber-02.png"><h1>　PIKASONIC</h1>
 				</a></div>
 				<?php
 					$url = "https://www.youtube.com/feeds/videos.xml?channel_id=UC2ne9XqtBWKJKLfIAKtmjAg";
@@ -248,7 +218,7 @@
 			</div>
 			<div class="container_youtube">
 				<div class="you_link"><a href="https://www.youtube.com/c/TheFatRat" target="_blank">
-					<image class="image_flex" src="icon/tuber-04.png"><h1>　TheFatRat</h1>
+					<image class="image_flex" src="icon/tuber-03.png"><h1>　TheFatRat</h1>
 				</a></div>
 				<?php
 					$url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCa_UMppcMsHIzb5LDx1u9zQ";
@@ -267,7 +237,6 @@
 			</div>
 		</div>
 	</div>
-	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="rss.js"></script>
 	
