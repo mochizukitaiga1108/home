@@ -91,7 +91,7 @@
 					<span class="title">　News　</span></a>
 				</div>
 				<div class="tab_action">
-					<a href="youtube.php"><img class="icon" src="icon/home.png">
+					<a href="youtube_news.php"><img class="icon" src="icon/home.png">
 					<span class="title">　Youtube　</span></a>
 				</div>
 				<div class="tab">
