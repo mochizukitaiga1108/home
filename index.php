@@ -91,7 +91,7 @@
 					<span class="title">　News　</span>
 				</div>
 				<div class="tab_action">
-					<a href="youtube.php"><img class="icon" src="icon/douga.png">
+					<a href="youtube_news.php"><img class="icon" src="icon/douga.png">
 					<span class="title">　Youtube　</span></a>
 				</div>
 				<div class="tab_action">
@@ -148,51 +148,27 @@
 					<p><?php echo $data[5]['description']; ?></p>
 					<p><?php echo $data[5]['pubDate']; ?></p>
 			</div>
-			<?php 
-				$data = array();
-				$rss = simplexml_load_file('https://news.yahoo.co.jp/rss/topics/top-picks.xml');
-				foreach ($rss->channel->item as $item) {
-					$x = array();
-					$x['link'] = (string)$item->link;
-					$x['title'] = (string)$item->title;
-					$x['description'] = (string)$item->description;
-					$x['pubDate'] = (string)$item->pubDate;
-					$data[] = $x;
+			<div class="button">
+				<form action="index.php" method="post">
+					<button type="submit" name="top">主要</button>
+					<button type="submit" name="bus">経済</button>
+					<button type="submit" name="it">ＩＴ</button>
+				</form>
+			</div>
+			<?php
+				if (isset($_POST['top'])) {
+					include('index_top.php');
+				}
+				elseif (isset($_POST['bus'])) {
+					include('index_bus.php');
+				}
+				elseif (isset($_POST['it'])) {
+					include('index_it.php');
+				}
+				else {
+					include('index_top.php');
 				}
 			?>
-			<div class="container">
-				<a href="https://news.yahoo.co.jp/" target="_blank"><img class="icon" src="icon/yahoo_new.png"></a>
-				<div class="con_link">
-					<p><a href="<?php echo $data[0]['link']; ?>" target="_blank"> <?php echo $data[0]['title']; ?></a></p>
-				</div>
-					<p><?php echo $data[0]['description']; ?></p>
-					<p><?php echo $data[0]['pubDate']; ?></p>
-				<div class="con_link">
-					<p><a href="<?php echo $data[1]['link']; ?>" target="_blank"> <?php echo $data[1]['title']; ?></a></p>
-				</div>
-					<p><?php echo $data[1]['description']; ?></p>
-					<p><?php echo $data[1]['pubDate']; ?></p>
-				<div class="con_link">
-					<p><a href="<?php echo $data[2]['link']; ?>" target="_blank"> <?php echo $data[2]['title']; ?></a></p>
-				</div>
-					<p><?php echo $data[2]['description']; ?></p>
-					<p><?php echo $data[2]['pubDate']; ?></p>
-				<div class="con_link">
-					<p><a href="<?php echo $data[3]['link']; ?>" target="_blank"> <?php echo $data[3]['title']; ?></a></p>
-				</div>
-					<p><?php echo $data[3]['description']; ?></p>
-					<p><?php echo $data[3]['pubDate']; ?></p>
-				<div class="con_link">
-					<p><a href="<?php echo $data[4]['link']; ?>" target="_blank"> <?php echo $data[4]['title']; ?></a></p>
-				</div>
-					<p><?php echo $data[4]['description']; ?></p>
-					<p><?php echo $data[4]['pubDate']; ?></p>
-				<div class="con_link">
-					<p><a href="<?php echo $data[5]['link']; ?>" target="_blank"> <?php echo $data[5]['title']; ?></a></p>
-				</div>
-					<p><?php echo $data[5]['description']; ?></p>
-					<p><?php echo $data[5]['pubDate']; ?></p>
-			</div>
 		</div>
 		<div class="rss">
 			<?php 
