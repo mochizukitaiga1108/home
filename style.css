@@ -12,6 +12,10 @@ img {
 	border: 0px;
 	display: flex;
 }
+img_flex {
+	width: 10%;
+	height: 10%;
+}
 
 input[type="submit"] {
 	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#AAA));
@@ -197,8 +201,37 @@ div.rss>div.container>div.con_link {
 	color: #FFFFFF;
 }
 
-div.rss>div.button button{
-	text-align: right;
+div.rss>div.container>div.button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.rss>div.container>div.button button{
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 20px;
+  }
+
+div.rss>div.container>div.button button:hover{
+  background-color: #00bfff;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
 /*====================================================================================================*/
@@ -213,18 +246,9 @@ div.rss>div.container_youtube {
 }
 
 div.rss>div.container_youtube p{
-	font-size: 20px;
+	font-size: 30px;
 	color: #FFFFFF;
-}
-
-div.rss>div.container_youtube a{
-	font-size: 20px;
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-div.rss>div.container_youtube a:hover{
-	color: #00bfff;
+	text-align: center;
 }
 
 div.you_link {
@@ -233,7 +257,36 @@ div.you_link {
 	background-color: #333333;
 }
 
-div.image_flex {
-	margin-top: 100px;
-	margin-left: 100px;
+div.rss>div.container_youtube>div.button {
+  height: 100%;
+  display: flex;
+  
+  justify-content: center;
+}
+
+div.rss>div.container_youtube>div.button button{
+  width: 150px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 0px 20px 20px 20px;
+  text-align: center;
+  }
+
+div.rss>div.container_youtube>div.button button:hover{
+  background-color: #00bfff;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }

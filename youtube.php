@@ -86,13 +86,13 @@
 			</div>
 			<div class="tab_bar">
 			<!-- ============================== タブ ============================== -->
-				<div class="tab">
-					<img class="icon" src="icon/news.png">
-					<span class="title">　News　</span>
-				</div>
 				<div class="tab_action">
-					<a href="youtube.php"><img class="icon" src="icon/douga.png">
-					<span class="title">　Youtube　</span></a>
+					<a href="index.php"><img class="icon" src="icon/news.png">
+					<span class="title">　News　</span></a>
+				</div>
+				<div class="tab">
+					<img class="icon" src="icon/douga.png">
+					<span class="title">　Youtube　</span>
 				</div>
 				<div class="tab_action">
 					<a href="tool.php"><img class="icon" src="icon/tool.png">
@@ -103,20 +103,23 @@
 		
 		<!-- ============================== ウェブページ ============================== -->
 		<div class="rss">
-			<div class="container">
+			<div class="container_youtube">
+				<div class="you_link"><p>ニュース</p></div>
 				<div class="button">
-					<form action="index.php" method="post">
-						<button class="button" name="tou">天気</button>
-						<button class="button" name="kei">警報</button>
+					<form action="youtube.php" method="post">
+						<button class="button" name="tbs">ＴＢＳ</button>
+						<button class="button" name="ann">ＡＮＮ</button>
+						<button class="button" name="nit">日テレ</button>
 					</form>
 				</div>
 			</div>
-			<div class="container">
+			<div class="container_youtube">
+				<div class="you_link"><p>娯楽</p></div>
 				<div class="button">
-					<form action="index.php" method="post">
-						<button class="button" name="top">主要</button>
-						<button class="button" name="bus">経済</button>
-						<button class="button" name="it">ＩＴ</button>
+					<form action="youtube.php" method="post">
+						<button class="button" name="hal">渋谷ハル</button>
+						<button class="button" name="pik">PIKASONIC</button>
+						<button class="button" name="fat">TheFatRat</button>
 					</form>
 				</div>
 			</div>
@@ -124,45 +127,39 @@
 		<div class="rss">
 			<div class="container">
 				<?php
-					if (isset($_POST['tou'])) {
-						include('php/news_tou.php');
+					if (isset($_POST['tbs'])) {
+						include('php/youtube_tbs.php');
 					}
-					elseif (isset($_POST['kei'])) {
-						include('php/news_kei.php');
+					elseif (isset($_POST['ann'])) {
+						include('php/youtube_ann.php');
 					}
-					else {
-						include('php/news_tou.php');
-					}
-				?>
-			</div>
-			<div class="container">
-				<?php
-					if (isset($_POST['top'])) {
-						include('php/news_top.php');
-					}
-					elseif (isset($_POST['bus'])) {
-						include('php/news_bus.php');
-					}
-					elseif (isset($_POST['it'])) {
-						include('php/news_it.php');
+					elseif (isset($_POST['nit'])) {
+						include('php/youtube_nit.php');
 					}
 					else {
-						include('php/news_top.php');
+						include('php/youtube_tbs.php');
 					}
 				?>
 			</div>
-		</div>
-		<div class="rss">
 			<div class="container">
 				<?php
-					include('php/news_life.php');
-				?>
-			</div>
-			<div class="container">
-				<?php
-					include('php/news_gizm.php');
+					if (isset($_POST['hal'])) {
+						include('php/youtube_hal.php');
+					}
+					elseif (isset($_POST['pik'])) {
+						include('php/youtube_pik.php');
+					}
+					elseif (isset($_POST['fat'])) {
+						include('php/youtube_fat.php');
+					}
+					else {
+						include('php/youtube_hal.php');
+					}
 				?>
 			</div>
 		</div>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="rss.js"></script>
+	
 </body>
